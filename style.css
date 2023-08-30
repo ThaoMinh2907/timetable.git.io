@@ -10,6 +10,9 @@ header {
   text-align: center;
   padding: 1rem;
 }
+table{
+    width: 100%;
+}
 main{
     width: 100%;
 }
