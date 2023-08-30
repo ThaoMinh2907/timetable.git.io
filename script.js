@@ -116,17 +116,10 @@ const scheduleTable = document.getElementById("schedule");
 
 scheduleData.forEach(item => {
     // var html =''
+    const column = scheduleTable.insertColumn();
     item.schedule.forEach(element => {
-        // html =`
-    //             <tr>
-    //                 <th>`+element.time+`</th>
-    //                 <th>`+element.event+`</th>
-    //             </tr>
-    //         `
-    //     scheduleTable.innerHTML += html
-        const row = scheduleTable.insertRow();
-        const timeCell = row.insertCell(0);
-        const eventCell = row.insertCell(1);
+        const timeCell = column.insertCell(0);
+        const eventCell = column.insertCell(1);
 
         timeCell.textContent = element.time;
         eventCell.textContent = element.event;
