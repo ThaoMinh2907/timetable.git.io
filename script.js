@@ -21,7 +21,7 @@ const scheduleTable = document.getElementById("schedule");
 
 scheduleData.forEach(item => {
     var html =''
-    item.forEach(element => {
+    element = item.schedule
         html +=`
                 <tr>
                     <th>`+element.time+`</th>
@@ -29,7 +29,7 @@ scheduleData.forEach(item => {
                 </tr>
             `
         scheduleTable.innerHTML += html
-    })
+    
     
 //   const row = scheduleTable.insertRow();
 //   const timeCell = row.insertCell(0);
