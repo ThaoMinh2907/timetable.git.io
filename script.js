@@ -109,21 +109,19 @@ const scheduleData = [
         { time: 10, event: "" }
     ]
   }
-  // Thêm dữ liệu thời khoá biểu tương tự ở đây
 ];
 
 const scheduleTable = document.getElementById("schedule");
 
-scheduleData.forEach(item => {
-    // var html =''
-    const column = scheduleTable.insertColumn();
-    item.schedule.forEach(element => {
-        const timeCell = column.insertCell(0);
-        const eventCell = column.insertCell(1);
+for (let time = 1; time <= 10; time++) {
+  const row = scheduleTable.insertRow();
 
-        timeCell.textContent = element.time;
-        eventCell.textContent = element.event;
-    })
-    
-  
-});
+  const timeCell = row.insertCell(); // Ô cho thời gian
+  timeCell.textContent = `Tiết ${time}`;
+
+  scheduleData.forEach(day => {
+    const eventData = day.schedule.find(item => item.time === time);
+    const eventCell = row.insertCell(); // Ô cho sự kiện
+    eventCell.textContent = eventData ? eventData.event : '';
+  });
+}
