@@ -93,22 +93,6 @@ const scheduleData = [
         { time: 10, event: "" }
     ]
   }
-  ,
-  {
-    "day": "Sunday",
-    "schedule": [
-        { time: 1, event: "" },
-        { time: 2, event: "" },
-        { time: 3, event: "" },
-        { time: 4, event: "" },
-        { time: 5, event: "" },
-        { time: 6, event: "" },
-        { time: 7, event: "" },
-        { time: 8, event: "" },
-        { time: 9, event: "" },
-        { time: 10, event: "" }
-    ]
-  }
 ];
 
 const scheduleTable = document.getElementById("schedule");
