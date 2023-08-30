@@ -117,7 +117,7 @@ for (let time = 1; time <= 10; time++) {
   const row = scheduleTable.insertRow();
 
   const timeCell = row.insertCell(); // Ô cho thời gian
-  timeCell.textContent = `time`;
+  timeCell.textContent = time;
 
   scheduleData.forEach(day => {
     const eventData = day.schedule.find(item => item.time === time);
