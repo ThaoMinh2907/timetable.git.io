@@ -1,7 +1,7 @@
 const scheduleData = [
   { time: 1, event: "Chào cờ" },
-  { time: 2, event: "Buổi học 2" },
-  { time: 3, event: "Buổi học 3" }
+  { time: 2, event: "Anh Văn" },
+  { time: 3, event: "Sinh Học" }
   // Thêm dữ liệu thời khoá biểu tương tự ở đây
 ];
 
