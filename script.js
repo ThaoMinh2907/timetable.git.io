@@ -20,21 +20,22 @@ const scheduleData = [
 const scheduleTable = document.getElementById("schedule");
 
 scheduleData.forEach(item => {
-    var html =''
+    // var html =''
     item.schedule.forEach(element => {
-        html +=`
-                <tr>
-                    <th>`+element.time+`</th>
-                    <th>`+element.event+`</th>
-                </tr>
-            `
-        scheduleTable.innerHTML += html
+        // html =`
+    //             <tr>
+    //                 <th>`+element.time+`</th>
+    //                 <th>`+element.event+`</th>
+    //             </tr>
+    //         `
+    //     scheduleTable.innerHTML += html
+        const row = scheduleTable.insertRow();
+        const timeCell = row.insertCell(0);
+        const eventCell = row.insertCell(1);
+
+        timeCell.textContent = element.time;
+        eventCell.textContent = element.event;
     })
     
-//   const row = scheduleTable.insertRow();
-//   const timeCell = row.insertCell(0);
-//   const eventCell = row.insertCell(1);
-
-//   timeCell.textContent = item.time;
-//   eventCell.textContent = item.event;
+  
 });
