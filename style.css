@@ -10,7 +10,9 @@ header {
   text-align: center;
   padding: 1rem;
 }
-
+main{
+    width: 100%;
+}
 #schedule {
   margin: 2rem;
   border-collapse: collapse;
