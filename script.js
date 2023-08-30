@@ -5,11 +5,13 @@ const scheduleData = [
   // Thêm dữ liệu thời khoá biểu tương tự ở đây
 ];
 
-const scheduleContainer = document.getElementById("schedule");
+const scheduleTable = document.getElementById("schedule");
 
 scheduleData.forEach(item => {
-  const eventDiv = document.createElement("div");
-  eventDiv.classList.add("event");
-  eventDiv.innerHTML = `<strong>${item.time}</strong> - ${item.event}`;
-  scheduleContainer.appendChild(eventDiv);
+  const row = scheduleTable.insertRow();
+  const timeCell = row.insertCell(0);
+  const eventCell = row.insertCell(1);
+
+  timeCell.textContent = item.time;
+  eventCell.textContent = item.event;
 });
