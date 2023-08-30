@@ -15,6 +15,7 @@ const scheduleData = [
 const scheduleTable = document.getElementById("schedule");
 
 scheduleData.forEach(item => {
+    var html =''
     html +=`
         <tr>
             <th>`+item.time+`</th>
