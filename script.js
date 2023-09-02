@@ -105,64 +105,23 @@ for (let time = 1; time <= 10; time++) {
         eventCell.textContent = eventData ? eventData.event : "";
     });
 }
-const { google } = require("googleapis");
 
-// Xác thực với thông tin xác thực của bạn
-const auth = new google.auth.GoogleAuth({
-    // Đường dẫn đến tệp tin JSON hoặc thông tin khóa API
-    keyFile:
-        "/Users/minhthao/Downloads/client_secret_1092920664989-mku901deqpe28m9vl4lupjdl3i6ico7a.apps.googleusercontent.com.json",
-    // Phạm vi cần truy cập (ví dụ: "https://www.googleapis.com/auth/spreadsheets.readonly")
-    scopes: "scopes",
-});
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "api.php", true);
+xhr.setRequestHeader("Content-Type", "application/json");
 
-// Tạo một phiên làm việc của Google Sheets API
-const sheets = google.sheets({ version: "v4", auth });
-
-// Gọi API để lấy dữ liệu từ bảng tính
-sheets.spreadsheets.values.get(
-    {
-        spreadsheetId: "1qcLBqIAltMVeusjr7NZnuYAJRVOXfOVNf94cwKKDYXc",
-        range: "Sheet1!A1:C3", // Phạm vi dữ liệu cần lấy
-    },
-    (err, res) => {
-        if (err) {
-            console.error("Lỗi:", err);
-            return;
-        }
-
-        const rows = res.data.values;
-        if (rows.length) {
-            console.log("Dữ liệu:");
-            rows.forEach((row) => {
-                console.log(row.join("\t"));
-            });
-        } else {
-            console.log("Không có dữ liệu được tìm thấy.");
-        }
+xhr.onload = function () {
+    if (xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        // Xử lý dữ liệu ở đây, ví dụ: hiển thị nó trên trang web
+        console.log(data);
+    } else {
+        console.log("Lỗi khi gửi yêu cầu: " + xhr.status);
     }
-);
+};
 
-// // Khởi tạo đối tượng XMLHttpRequest
-// var xhr = new XMLHttpRequest();
+xhr.onerror = function () {
+    console.log("Lỗi khi gửi yêu cầu.");
+};
 
-// // Xác định hành động khi yêu cầu hoàn thành
-// xhr.onreadystatechange = function () {
-//     if (xhr.readyState === XMLHttpRequest.DONE) {
-//         if (xhr.status === 200) {
-//           console.log(xhr)
-//             var responseData = JSON.parse(xhr.responseText);
-//             console.log(responseData);
-
-//             // Xử lý dữ liệu tại đây, ví dụ hiển thị trên trang web
-//             var dataContainer = document.getElementById('data-container');
-//             dataContainer.textContent = JSON.stringify(responseData, null, 2);
-//         } else {
-//             console.error('Có lỗi xảy ra:', xhr.status, xhr.statusText);
-//         }
-//     }
-// };
-
-// // Gửi yêu cầu GET đến tệp PHP
-// xhr.open('GET', 'connect.php', true);
-// xhr.send();
+xhr.send();
