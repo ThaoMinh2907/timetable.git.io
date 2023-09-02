@@ -2,14 +2,14 @@
 require_once __DIR__ . 'vendor/autoload.php'; // Đường dẫn đến tệp autoload.php của thư viện Google API Client
 
 $client = new Google_Client();
-$client->setAuthConfig('path/to/your/credentials.json'); // Đường dẫn đến tệp JSON chứa thông tin xác thực OAuth 2.0
-$client->setApplicationName('Your Application Name');
+$client->setAuthConfig('client_secret_1092920664989-mku901deqpe28m9vl4lupjdl3i6ico7a.apps.googleusercontent.com.json'); // Đường dẫn đến tệp JSON chứa thông tin xác thực OAuth 2.0
+$client->setApplicationName('Timetable');
 $client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
 
 $service = new Google_Service_Sheets($client);
 
-$spreadsheetId = 'your_spreadsheet_id'; // ID của Google Sheets
-$range = 'Sheet1'; // Phạm vi dữ liệu cần lấy
+$spreadsheetId = '1h0lHjmLb2fhdvTxSl8uUj88zPwX9rlynnG46PA-0aHQ'; // ID của Google Sheets
+$range = 'data'; // Phạm vi dữ liệu cần lấy
 
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues();
