@@ -107,7 +107,7 @@ const scheduleTable = document.getElementById("schedule");
 // }
 
 $.ajax({
-    url: "http://localhost:5000/get_data", // Đường dẫn đến API của Python
+    url: "https://thaominh2907.github.io/timetable.git.io/get_data", // Đường dẫn đến API của Python
     type: "GET",
     success: function (response) {
         // Xử lý dữ liệu
@@ -115,7 +115,7 @@ $.ajax({
         data.forEach(function (item) {
             console.log(item);
             const row = scheduleTable.insertRow();
-            for (let i = 0;i<item.length; i++){
+            for (let i = 0; i < item.length; i++) {
                 row.insertCell().textContent = item[i];
             }
         });
