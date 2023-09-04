@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "alien-sol-397608",
+  "private_key_id": "e8890243b2811e908a8274c5ca1cc75519f9fe6e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCs2zCOcEonJ0jR\nnoy0hz+q8Aldl7kr9Goe5Vxx8RmZIkH3PCmV4/jxJAk5RM49Ky9CLOmnBjv4/aCJ\nUnn8QSG9zqFUU+QuG2ipytEtSw3RpD9AtsohErLGsNDmV5lks8eAbb+iUwkgtOos\nJh2t/ZDjJYThTxbM+pw91FWVCMO4qQL+Kwhmvm22puiJwIBxiMn3AoogmBDce8WU\nGyd/Kga9wPJHvEqZ5TRJhlXPDFqZ75BYevK0VXN2Sh9AX5NoavjGLcfAPpyoJ0pk\nS6w/aTNZu4UK+mGvif7j74v0sBSDF5R5TWgXiCyjih1XqWRvSdrbtNS/A7Txt7sy\nKHKxp9thAgMBAAECggEAH/nmSBs+pHKQdnKRjd3NKdaArQchsp9iuDduvAdBWIIt\nWMqQ2NEU3qrvZ+AyFL+13NSJHqQ5GOz2MyEGPuNflgiw8HQabGsWl/5UZsARHNx4\n9QQ7bRXT64yPAGVpE2dsevYScrlQoXPGNAeTCvoywMpShAmI6r9bgtaSRGEcL78J\nk33W70xY2bUkQWbyZ4StUxc/A3ufut8hMwn6mr4+mUe4+DtDv/q2bpnYj0PreKTP\n0RbKePZhrBrIfjLr3ZJKQm7mh8tgbSYTboZRSlzrW60FGh3+afXCI+9yZMd/bMZp\neZN74aYY4Mavl12mojd/FWI0mdgXllM69XwJF0Q7DwKBgQDy6AzV9qJNBYxVT/g/\ntVeQLOlljbzTJf1mznrDsTZDm1U6nr5hz1LYOEQRKNdazRyDI7rwL+NyDvpoJzQ4\nf4DP4WLUchhY2QIU0Tkv2RLwnQgwJcoRksjFjVfXRC7zhuCQ/BfEqlWEp2ThOG6s\nXX0geOg8mpIjdhxjfnrQi9oIPwKBgQC2LH39yvSghuoHuMpxRWGdzL8tBpnXHDkW\nSaaQMjw/DaLFq+wI94n/469EALtYSRCojFDdSNPNLGNZ3xok6pRecyScGkJCksZN\nOOmA75YsmE9EfDgP1g4Cn2CuXEZhOZTbxScUbRUKWJRW7XxIxRJqRjke0bpmHL85\nJywjSW40XwKBgQCxViR42PSo0pIffqC4skXZJlDHKXFfne6gbcJGuEvrk63nfBl2\nAwxyerGG7ZA75F8ahq1lyTB+Bt1dyLFhRgTev6eNfja0NspENHNRsWMYcyyVKiGa\nLtWRFJ26tTap6CBu+PzJQanpjOQjYTW7dQ1y9ZJnHFnwtbwID0DOnCtztQKBgQCF\nF6xUptpiDS8dxRvh9VaD+voQ4ymxxqTOa7CM2Ka7SjMJR7mCM5dWo/mALSiyL29E\nNH8/q91RoIRVPHHVVqxe9LBie6y9Bo5qDJJL6L5GhmAjIL20lCZYNChmOnQQxAjF\nJxyOB8O/c0es2oRaheAWVIeWxJLx1z69eqj8fsFM8QKBgGU4XsTbMdYpmO3rZLh+\ncPMETVUbhmUSVImK6pphJfprgjm5CywXH0VpmlnyGmIuHyOzgkihXgVBDjI8BMxs\npZbV6U0lXIqLB+WRJTK7qDBpvrDcnLaER5rErKLy78mq0mjOnDTWdSN3eUKqrCHL\ncHpY1UuR6tnQ4lZjzyoePGR9\n-----END PRIVATE KEY-----\n",
+  "client_email": "apisggsheet@alien-sol-397608.iam.gserviceaccount.com",
+  "client_id": "109271884276323401440",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/apisggsheet%40alien-sol-397608.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

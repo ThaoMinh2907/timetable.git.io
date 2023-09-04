@@ -1,28 +1,43 @@
 body {
-  font-size: 11px;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 0;
+    font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 #schedule {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#schedule th, #schedule td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+#schedule th,
+#schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
 }
 
 #schedule th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
+}
+#code {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+#get_data {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#get_data:active {
+    scale: 80%;
 }
