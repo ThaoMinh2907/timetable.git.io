@@ -12,8 +12,13 @@
         </header>
         <main>
             <div>
-                <input type="text" id="code" placeholder="Code...">
+                <input type="text" id="code" placeholder="Code..." />
                 <button id="get_data">Get data</button>
+                <!-- Input tệp tải lên tùy chỉnh -->
+                <label for="import_data" class="custom-file-upload">
+                    Tải tệp lên
+                </label>
+                <input type="file" name="import_data" id="import_data" />
             </div>
             <table style="width: 100%" id="schedule">
                 <tr>
@@ -30,6 +35,7 @@
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://apis.google.com/js/api.js"></script>
-        <script type="module" src="script.js"></script>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

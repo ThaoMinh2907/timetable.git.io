@@ -6,12 +6,17 @@ body {
 }
 
 header {
+  font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem;
 }
-
+main{
+  font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
+}
 #schedule {
     border-collapse: collapse;
     width: 100%;
@@ -28,16 +33,48 @@ header {
     background-color: #f2f2f2;
 }
 #code {
+  font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
     margin: 5px;
     padding: 5px 10px;
     border-radius: 10px;
     outline: none;
 }
 #get_data {
+  font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+#get_data:hover{
+    background-color: #0056b3;
+
 }
 #get_data:active {
     scale: 80%;
+}
+
+/* CSS cho input tệp tải lên */
+#import_data {
+    display: none; /* Ẩn nút tải lên mặc định */
+}
+
+.custom-file-upload {
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Khi người dùng di chuột qua nút tải lên */
+.custom-file-upload:hover {
+    background-color: #0056b3;
 }
