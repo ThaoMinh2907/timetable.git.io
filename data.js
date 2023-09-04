@@ -396,7 +396,7 @@ function parse_data(data) {
             var end = start_end[1];
             console.log(e[0], start, end);
 
-            for (var j = parseInt(start); j < parseInt(end); j++) {
+            for (var j = parseInt(start)-1; j < parseInt(end); j++) {
                 // console.log(j)
                 data_hscmue.data_schedule[index].schedule[j].event = e[0];
             }

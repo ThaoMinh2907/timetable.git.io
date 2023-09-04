@@ -7,6 +7,9 @@ function cleanTable() {
 }
 
 function findSchoolByCode(code) {
+    // if (code=='HCMUE'){
+    //     // docTepJSON();
+    // }
     var response = "";
     var value = mega_data.find((school) => school.school_code === code);
     if (mega_data.find((school) => school.school_code === code)) {
